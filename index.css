@@ -1,0 +1,146 @@
+
+/* header */
+
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+
+}
+
+.profile-icon, .logo-icon, .chat-icon{
+    height: 3em;
+
+}
+
+/* body */
+.pet{
+    display:grid;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em 2em;
+
+}
+
+.liked-rejected-icon{
+    position: absolute;
+    left: 14px;
+    top: 121.96px;
+
+
+    padding: 1em 2em;
+    width: 0.01em;
+    height: 0.05em;
+    border-radius: 10.3807px;
+    transform: rotate(-30deg);
+
+    margin-top: 17em;
+    transition: transform 2s;
+    /* transition-duration: 4s; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2; */
+    /* margin-top: 25em; */
+
+
+
+}
+
+.pet-img{
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) -11.44%, rgba(0, 0, 0, 0) 39.97%);
+    border-radius: 15px;
+
+}
+
+.nameAge{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
+    
+}
+
+.bio{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+
+}
+
+
+
+.name-age-bio, .pet-img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.name-age-bio{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 1em 2em;
+}
+
+
+.love-struck-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:green;
+}
+/* Buttons */
+
+.choice-btns{
+    display: flex;
+    justify-content: center;
+
+}
+
+button{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    max-width: 50%;
+
+    border: 5px solid #ED4B70;
+
+    width: 3em;
+    height:3em;
+    font-size: 2rem;
+    opacity: 0.5;
+    margin: 0.20em;
+
+
+}
+.reject-btn{
+    background-image: url('images/cross.svg');
+    fill: green;
+    box-shadow: 0px 10px 20px #EDD9DF;
+    /* color:#ED4B70 */
+
+}
+
+.reject-btn:hover{
+    opacity: 1.0;
+}
+
+.like-btn{
+    background-image: url('images/heart.png');
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+.like-btn:hover{
+    opacity: 1.0;
+}
+
+#like-btn:active, #reject-btn:active{
+    transform: rotate(0deg);
+}
